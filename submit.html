@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button{
+            background-color:skyblue;
+
+        }
+        body {
+background-color:#E2E4E9;
+            font-family: Arial, sans-serif;
+ background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        #section, #year {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff;
+            width: 300px;
+        }
+      
+    </style>
+</head>
+<body>
+<img src="mee.jpg">
+<h2>Enter your selection</h2>
+    <select id="year">
+        <option value="" selected disabled>Select the year</option>
+        <option value="1st-year">1st Year</option>
+        <option value="2nd-year">2nd Year</option>
+        <option value="3rd-year">3rd Year</option>
+        <option value="4th-year">4th Year</option>
+    </select>
+    
+    <select id="section">
+        <option value="" selected disabled>Select the section</option>
+        <option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-A.html">CSE-A</option>
+        <option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-B.html">CSE-B</option>
+<option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-C.html">CSE-C</option>
+<option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-D.html">CSE-D</option>
+<option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-AIML-A.html">CSE-AIML A</option>
+<option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-AIML-A.html">CSE-AIML-B</option>
+<option value="file:///C:/Users/DELL/AppData/Local/Temp/Tempd93532e2-9e9a-41c3-8ee6-ab902104bc01_Final%20Update%202%20year%20Sections%20TT's.zip/Final%20Update%202%20year%20Sections%20TT's/2CSE-AIML-C.html">CSE-AIML-C</option>
+<option value="C:\Users\DELL\OneDrive\Pictures\Documents\2-1\HCI\New folder\2CSE-AIML-D.html">CSE-AIML-D</option>
+</select>
+<br><br>
+    <input type="submit" value="Submit" class="button">
+    <script>
+        document.getElementById("section").addEventListener("change", function() {
+            var selectedOption = this.value;
+            if (selectedOption !== "") {
+                window.open(selectedOption, "_blank");
+            }
+        });
+        
+        document.getElementById("year").addEventListener("change", function() {
+            var selectedYear = this.value;
+        });
+    </script>
+</body>
+</html>
